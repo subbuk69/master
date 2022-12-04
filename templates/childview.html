@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block subbu %}
+{% load static %}
+<html lang="en">
+<head>
+     <title>CHILD VIEW TABLE</title>
+</head>
+<link rel="stylesheet" href="{% static "css/childview.css" %}">
+<body>
+     <h1>Child Information</h1>
+        {% if view %}
+        <table>
+             <thead>
+                  <th>Sno</th>
+                  <th>Child Name</th>
+                  <th>Child UID No</th>
+                  <th>Gender</th>
+                  <th>Mother Name</th>
+                  <th>Mother UID No</th>
+                  <th>Father Name</th>
+                  <th>Father UID No</th>
+                  <th>Ration Card No</th>
+                  <th>Mobile No</th>
+                  
+             </thead>
+                {% for x in view %}
+             <tr>
+               <td>{{ x.Sno }}</td>
+               <td>{{ x.Child_Name }}</td>
+               <td>{{ x.Child_UIDNo }}</td>
+               <td>{{ x.Gender }}</td>
+               <td>{{ x.Mother_Name }}</td>
+               <td>{{ x.Mother_UIDNo }}</td>
+               <td>{{ x.Father_Name }}</td>
+               <td>{{ x.Father_UIDNo }}</td>
+               <td>{{ x.Ration_CardNo }}</td>
+               <td>{{ x.Mobile_No }}</td>
+                </a>
+            </td>
+             </tr>
+            {% endfor %}
+            {% else %}
+             <p>No Records Found</p>
+        </table>
+    {% endif %}
+</body>
+</html>
+{% endblock %}

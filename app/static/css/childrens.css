@@ -1,0 +1,19 @@
+
+ p{
+     color: rgb(0, 68, 255);
+     text-align: center;
+      margin-top: 50px;
+     font-size: 50px;
+ }
+ .but{
+      margin-left: 500px;
+      margin-top: 130px;
+ }
+ .but h3{
+     color: chartreuse;
+     padding-bottom: 20px;
+ }
+ .but h2{
+     padding-bottom: 20px;
+    color: red;
+}

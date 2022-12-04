@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block subbu %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHILD INFO</title>
+    <!-- Latest compiled and minified CSS -->
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <link rel="stylesheet" href="{% static "css/childrens.css" %}">
+</head>
+<body>
+
+                    <p>Welcome Saraswathi</p>
+     <div class="but">
+          <a class="btn btn-primary" href="/childmodels">Click Here To View Childrens Details</a><br><br>
+          <h3>Click Here To Register Through admin</h3>
+          <a class="btn btn-primary" href="/admin/app/childdetails/add/"><b>Click Here</b></a><br><br>
+          <h2>OR</h2>
+          <a class="btn btn-primary" href="/details">Click Here To Register Childrens Details</a>
+     </div>
+</body>
+</html>
+{% endblock %}
